@@ -1,0 +1,20 @@
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Message</th>
+			<th>Created At</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for entry in feedback_entries %}
+		<tr>
+			<td>{{ entry.name }}</td>
+			<td>{{ entry.email }}</td>
+			<td>{{ entry.message }}</td>
+			<td>{{ entry.created_at }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
