@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<style>
+body {
+	background-image : url("https://images.saymedia-content.com/.image/t_share/MTc4NzM1OTc4MzE0MzQzOTM1/how-to-create-cool-website-backgrounds-the-ultimate-guide.png");
+	background-position: center;
+	background-size: cover;
+}
+</style>
+	<head>
+		<title>TalentServe Feedback Page</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}">
+	</head>
+	<body>
+		<h1 class="head1">Welcome to the TalentServe Feedback Page</h1>
+		<a href="{% url 'feedback_form' %}"><button class="button">Leave Feedback</button></a>
+	</body>
+</html>
